@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<script>
+    let a= [];
+    let num =10;
+    for ( let i=0; i<num;i++){
+        a[i] = parseInt(prompt("nhap vao so nguyen "));
+    }
+    console.log(a);
+    let number=parseInt(prompt("nhap vao so muon kiem tra"));
+    for (let i=0; i<=a.length; i++) {
+        if (a[i] == number) {
+            document.write(number + "  is in the array");
+            break;
+        } if (i==a.length) {
+            document.write(number + "  is not in the array");
+        }
+    }
+</script>
+</body>
+</html>

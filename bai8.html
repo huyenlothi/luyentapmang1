@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<script>
+    let a=[];
+    let num=10;
+    let text="";
+    for (let i=0; i<num; i++) {
+        a[i] =parseInt(prompt("nhap vao so nguyen"));
+    }
+    console.log(a);
+    for (i=0;i<a.length; i++) {
+        let max=a[0]; let n;
+        for (let i=1;i<=a.length;i++) {
+            if (max<a[i]) {
+                max=a[i];
+                n=i;
+            }
+        }
+        text += max +",";
+        a.splice(n,1);
+        a[a.length] =0;
+    }
+    document.write(text);
+</script>
+</body>
+</html>
